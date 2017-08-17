@@ -25,6 +25,12 @@
       window.addEventListener("hashchange", function(){
         self.displayNote();
       });
+      window.addEventListener("submit", function(event){
+        event.preventDefault();
+        self._noteList.create(event.srcElement.elements[0].value);
+        document.getElementById("textarea").value = "";
+        self.display();
+      });
     }
   };
 

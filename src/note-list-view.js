@@ -10,7 +10,7 @@
       return "<a href='#notes/" + note.id() + "'>" + note.text().substring(0,20) + "</a>";
     });
 
-    return "<ul><li>" + noteList.join("</li><li>") + "</li></ul>";
+    return "<ul><li>" + noteList.join("</li><li>") + "</li></ul><br>";
   };
 
 exports.NoteListView = NoteListView;
