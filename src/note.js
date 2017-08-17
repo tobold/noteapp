@@ -1,6 +1,6 @@
-"use strict";
-
 (function(exports) {
+  "use strict";
+
   function Note(text) {
     this._text = text;
     //this._id = id;
