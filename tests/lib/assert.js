@@ -16,3 +16,13 @@ var describe = function(description, test) {
     console.error(err);
   }
 };
+
+// var it = function(description, test) {
+//   document.getElementById("tests").innerHTML += "<b>" + description + "</b>";
+//   try { test(); }
+//   catch(err) {
+//     document.getElementById("tests").innerHTML += ("<b>⚠️" + "</b><br> <ul> error: " + err.message + "</ul><br>");
+//     console.error(err);
+//   }
+//   document.getElementById("tests").innerHTML += ("<b>✅" + "</b><br> <ul>completed successfully!" + "</ul><br>");
+// };

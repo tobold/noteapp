@@ -1,7 +1,5 @@
-"use strict";
-
 (function(exports) {
-
+  "use strict";
   function NoteListView(list) {
     this._list = list;
   }
