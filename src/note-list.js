@@ -4,6 +4,7 @@
   function NoteList(notemodel) {
     this._notes = [];
     this._notemodel = notemodel;
+    this._idincrementor = 0;
   }
 
   NoteList.prototype = {
@@ -11,7 +12,9 @@
       return this._notes;
     },
     create: function(text) {
-      this._notes.push(new this._notemodel(text));
+      var id = this._idincrementor;
+      this._notes.push(new this._notemodel(text, id));
+      this._idincrementor ++;
     }
   };
 

@@ -1,12 +1,16 @@
 // Note Model
 (function(exports) {
-  function noteModelMock(text) {
+  function noteModelMock(text, id) {
     this._text = text;
+    this._id = id;
   }
 
   noteModelMock.prototype = {
     text: function() {
       return this._text;
+    },
+    id: function() {
+      return this._id;
     }
   };
 
@@ -18,6 +22,7 @@
   function noteListModelMock(noteModelMock) {
     this.noteModelMock = noteModelMock;
     this._notes = [];
+    this._idincrementor = 0;
   }
 
   noteListModelMock.prototype = {
@@ -25,7 +30,9 @@
       return this._notes;
     },
     create: function(text) {
-      this._notes.push(new this.noteModelMock(text));
+      id = this._idincrementor;
+      this._notes.push(new this.noteModelMock(text, id));
+      this._idincrementor ++;
     }
   };
 
