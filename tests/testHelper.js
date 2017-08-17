@@ -39,6 +39,18 @@
   exports.noteListModelMock = noteListModelMock;
 })(this);
 
+// Note View Model
+(function(exports) {
+  function noteViewModelMock(noteMock) {
+    this._noteMock = noteMock;
+  }
+  noteViewModelMock.prototype.toHtml = function() {
+    return "<ul><li>" + this._note.text() + "</li></ul>";
+  };
+  exports.noteViewModelMock = noteViewModelMock;
+})(this);
+
+
 // Note List View Model
 (function(exports) {
   function noteListViewModelMock(noteListMock) {
