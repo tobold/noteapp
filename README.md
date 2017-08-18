@@ -9,4 +9,6 @@ git clone git@github.com:tobold/noteapp.git
 cd noteapp
 npm install
 open index.html
+
+to run tests: open tests/TestRunner.html
 ```
