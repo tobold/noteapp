@@ -1,8 +1,7 @@
 ## Vanilla Note
-#### A single page app for writing notes in pure vanilla Javascript
+A single page app for writing notes in pure vanilla Javascript
 
-
-####Setup
+#### Setup
 ```
 git clone git@github.com:tobold/noteapp.git
 cd noteapp
