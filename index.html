@@ -3,15 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Note</title>
+    <link rel="stylesheet" type="text/css" href="simple-grid.css">
   </head>
   <body>
-    <h1>Note</h1>
-    <form action="/notes/new" id="text" method="post" name="text">
-  		<textarea id="textarea" rows="4" cols="50" form="text"></textarea>
-  	  <input type="submit" value="submit">
-  	</form>
-    <div id="app">
-      Hello
+  <div class='container'>
+    <a href="#all"><h1>Note</h1></a>
+      <div id="app">
+        Hello
+      </div>
     </div>
   <script src="src/note.js"></script>
   <script src="src/note-list.js"></script>

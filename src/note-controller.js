@@ -23,11 +23,15 @@
     eventListener: function() {
       var self = this;
       window.addEventListener("hashchange", function(){
-        self.displayNote();
+        if (event.newURL.includes('notes/')) {
+          self.displayNote();
+        } else if (event.newURL.includes('all')) {
+          self.display();
+        }
       });
       window.addEventListener("submit", function(event){
         event.preventDefault();
-        self._noteList.create(event.srcElement.elements[0].value);
+        self._noteList.create(event.srcElement[0].value);
         document.getElementById("textarea").value = "";
         self.display();
       });

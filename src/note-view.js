@@ -7,7 +7,7 @@
 
   NoteView.prototype = {
     toHtml: function() {
-      return "<ul><li>" + this._note.text() + "</li></ul>";
+      return "<b>" + this._note.text().substring(0,20) + "</b>" + this._note.text().substring(20);
     }
   };
 
