@@ -2,28 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Test Runner</title>
+    <link href="https://fonts.googleapis.com/css?family=Astloch|Meddon|UnifrakturMaguntia" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/test.css">
+    <title>Game of Tests</title>
   </head>
   <body>
+    <h1>Game of Tests</h1>
+    <div id=wrapper>
+      <div id="tests"></div>
 
-    <h1>Test Runner</h1>
+      <script src="../src/note.js"></script>
+      <script src="../src/note-list.js"></script>
+      <script src="../src/note-view.js"></script>
+      <script src="../src/note-list-view.js"></script>
+      <script src="../src/note-controller.js"></script>
 
-    <div id="tests"></div>
+      <script src="testHelper.js"></script>
+      <script src="lib/assert.js"></script>
 
-    <script src="../src/note.js"></script>
-    <script src="../src/note-list.js"></script>
-    <script src="../src/note-view.js"></script>
-    <script src="../src/note-list-view.js"></script>
-    <script src="../src/note-controller.js"></script>
-
-    <script src="testHelper.js"></script>
-    <script src="lib/assert.js"></script>
-
-    <script src="unit/note-test.js"></script>
-    <script src="unit/note-list-test.js"></script>
-    <script src="unit/note-list-view-test.js"></script>
-    <script src="unit/note-view-test.js"></script>
-    <script src="unit/note-controller-test.js"></script>
-
+      <script src="unit/note-test.js"></script>
+      <script src="unit/note-list-test.js"></script>
+      <script src="unit/note-list-view-test.js"></script>
+      <script src="unit/note-view-test.js"></script>
+      <script src="unit/note-controller-test.js"></script>
+    </div>
   </body>
 </html>
