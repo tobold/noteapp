@@ -2,14 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note</title>
-    <link rel="stylesheet" type="text/css" href="simple-grid.css">
+    <link rel="stylesheet" type="text/css" href="assets/simple-grid.css">
   </head>
   <body>
   <div class='container'>
-    <a href="#all"><h1>Note</h1></a>
-      <div id="app">
-        Hello
+    <div class="row">
+      <div class="col-7">
+        <img hidefocus="true" usemap="#logomap" src="assets/logo.png"/>
+        <map name="logomap">
+          <area shape="poly" coords="0,74,0,147,197,147,303,340,345,340,436,155,437,1,268,0,202,68" href="#all">
+        </map>
+      </div>
+      <div class="col-5 padded">
+          <div class="lists" id="app">
+          </div>
       </div>
     </div>
   <script src="src/note.js"></script>
